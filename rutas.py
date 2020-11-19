@@ -5,6 +5,8 @@ def encontrar_ruta(C):
       
     if encontrar_ruta_aux(maze, 0, 0, R) == False:
         return []
+    if R[0][0]==0:
+        return [] 
     return R
       
 
