@@ -11,7 +11,7 @@ def encontrar_ruta(C):
 def encontrar_ruta_aux(C, x, y, R): 
       
 
-    if x == len(C) - 1 and y == len(C[0])-1 and C[x][y]== 1: 
+    if x == len(C) - 1 and y == len(C[0])-1 and C[x][y]== 0: 
         R[x][y] = 1
         return True
           
@@ -29,7 +29,7 @@ def encontrar_ruta_aux(C, x, y, R):
         return False
     
 def esSeguro( C, x, y ):
-    if x >= 0 and x < len(C) and y >= 0 and y < len(C[0]) and C[x][y] == 1:
+    if x >= 0 and x < len(C) and y >= 0 and y < len(C[0]) and C[x][y] == 0:
         return True
       
     return False
